@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-terminal: #090B0A;
+    --surface-charcoal: #101314;
+    --surface-elevated: #161A1C;
+    --border-terminal: #22282C;
+    --accent-lime: #C7FF3D;
+    --accent-cyan: #00F0FF;
+    --text-muted: #6B7780;
+  }
+
+  body {
+    background-color: #090B0A;
+    color: #E2E8F0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom terminal scan-line grid texture */
+.nexus-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.nexus-subtle-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom slim technical scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090B0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22282C;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343C42;
+}
+
+/* Tabular numbers for all financial/metric displays */
+.tabular-data {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}

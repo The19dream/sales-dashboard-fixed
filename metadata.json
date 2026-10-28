@@ -1,0 +1,6 @@
+{
+  "name": "FODS Enterprise Decision Support Dashboard",
+  "description": "Enterprise-grade Foundation of Data Science decision-support dashboard featuring time-series analytics, yearly aggregations, descriptive statistics, IQR outlier detection, and Supabase PostgreSQL integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
